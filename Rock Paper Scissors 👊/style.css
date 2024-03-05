@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24272E;
+}
+
+h1{
+    color: white;
+    padding: 20px;
+}
+
+.score-board{
+    color: white;
+    margin: 10px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 150px;
+    font-size: 40px;
+    padding: 15px 15px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.badge{
+    background-color: hsl(9, 100%, 68%);
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-family: Arial, sans-serif;
+}
+
+#user-label{
+    position: absolute;
+    top: 30px;
+    left: -30px;
+}
+
+#computer-label{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+.choices{
+    margin-bottom: 30px;
+}
+
+.choices button{
+    font-size: 7rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 24%);
+    background-color: hsl(196, 94%, 60%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.choices button:hover{
+    background-color: hsl(196, 94%, 75%);
+}
+
+.choices button:active{
+    background-color: hsl(196, 94%, 50%);
+}
+
+#playerDisplay, #computerDisplay{
+    font-size: 2rem;
+    color: white;
+}
+
+#resultDisplay{
+    color: white;
+    font-size: 3rem;
+    margin: 30px 0;
+}
