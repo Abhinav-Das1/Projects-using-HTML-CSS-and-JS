@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  background: linear-gradient(to right, #E8CBC0, #636FA4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#quote-container {
+  max-width: 800px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#quote-text {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+#quote-author {
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#new-quote {
+  background-color: #636FA4;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#new-quote:hover {
+  background-color: #4C4C7D;
+}
+
+/* Responsive Styles */
+@media (max-width: 865px) {
+  #quote-container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  #quote-container {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  #quote-text {
+    font-size: 28px;
+  }
+
+  #quote-author {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  #quote-container {
+    max-width: 500px;
+    padding: 20px;
+  }
+
+  #quote-text {
+    font-size: 24px;
+  }
+
+  #quote-author {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  #quote-container {
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  #quote-text {
+    font-size: 20px;
+  }
+
+  #quote-author {
+    font-size: 14px;
+  }
+
+  #new-quote {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  #quote-container {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  #quote-text {
+    font-size: 18px;
+  }
+
+  #quote-author {
+    font-size: 12px;
+  }
+
+  #new-quote {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  #quote-container {
+    max-width: 250px;
+    padding: 8px;
+  }
+
+  #quote-text {
+    font-size: 16px;
+  }
+
+  #quote-author {
+    font-size: 10px;
+  }
+
+  #new-quote {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
